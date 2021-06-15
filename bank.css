@@ -1,0 +1,103 @@
+* {
+  background-color: darkgrey;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(212, 209, 209);
+}
+body {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgb(212, 209, 209);
+}
+p {
+  transform: translateX(70rem);
+}
+.user {
+  margin-top: 2rem;
+  border-radius: 4rem;
+  transform: translateX(69rem);
+  font-size: 1rem;
+  text-align: center;
+  height: 2rem;
+  width: 4rem;
+  background-color: ghostwhite;
+  border-color: ghostwhite;
+  border-collapse: collapse;
+}
+.pin {
+  border-color: ghostwhite;
+
+  height: 2rem;
+  width: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: ghostwhite;
+  border-radius: 4rem;
+  transform: translateX(70rem);
+}
+.container {
+  background-color: black;
+  text-align: center;
+  display: flex;
+}
+h3 {
+  font-size: 6em;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+}
+.first {
+  text-align: center;
+  display: flex;
+  color: dodgerblue;
+  justify-content: center;
+}
+.second {
+  color: transparent;
+
+  text-align: center;
+  display: flex;
+
+  justify-content: center;
+}
+.container h3:nth-child(1) {
+  color: rgb(255, 255, 255);
+}
+.container h3:nth-child(2) {
+  color: rgb(32, 76, 121);
+  animation: wave 5s ease-in-out infinite;
+}
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
